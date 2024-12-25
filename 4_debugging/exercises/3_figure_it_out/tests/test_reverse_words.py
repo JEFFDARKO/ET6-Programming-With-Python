@@ -16,7 +16,7 @@ Author: Claude AI
 
 import unittest
 
-from ..reverse_words import reverse_words
+from reverse_words import reverse_words
 
 class TestReverseWords(unittest.TestCase):
     """Test the reverse_words function"""
@@ -42,3 +42,8 @@ class TestReverseWords(unittest.TestCase):
         self.assertEqual(reverse_words("hello   world"), "world   hello") # probably ok
     
     # write more tests!
+
+
+
+if __name__ == "__main__":
+    unittest.main()
