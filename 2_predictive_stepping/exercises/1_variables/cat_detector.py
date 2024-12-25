@@ -2,9 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """ Variables: Cat Detector
-
 Asks the use for the input "cat", throws an assertion error if the input is wrong
-
 """
 
 maybe_cat = input('Enter "cat": ')
