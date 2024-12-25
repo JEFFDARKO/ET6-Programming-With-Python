@@ -16,13 +16,14 @@ Author: Claude AI
 
 import unittest
 
-from reverse_words import reverse_words
+from ..reverse_words import reverse_words
 
 class TestReverseWords(unittest.TestCase):
     """Test the reverse_words function"""
     
     def test_empty_string(self):
         """It should return empty string for empty input"""
+        #this returned " "
         self.assertEqual(reverse_words(""), "") # probably ok
     
     def test_one_word(self):
@@ -42,8 +43,3 @@ class TestReverseWords(unittest.TestCase):
         self.assertEqual(reverse_words("hello   world"), "world   hello") # probably ok
     
     # write more tests!
-
-
-
-if __name__ == "__main__":
-    unittest.main()
