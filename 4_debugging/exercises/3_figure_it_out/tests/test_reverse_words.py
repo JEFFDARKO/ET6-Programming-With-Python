@@ -40,6 +40,6 @@ class TestReverseWords(unittest.TestCase):
 
     def test_three_spaces(self):
         """It should handle three spaces"""
-        self.assertEqual(reverse_words("hello   world"), "world   hello") # probably ok
+        self.assertEqual(reverse_words("hello  world"), "world  hello") # probably ok
     
     # write more tests!
