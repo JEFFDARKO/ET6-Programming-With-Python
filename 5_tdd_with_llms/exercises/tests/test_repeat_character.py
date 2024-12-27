@@ -15,7 +15,6 @@ class TestRepeatCharacter(unittest.TestCase):
       "it should return an empty if you pass an empty string"
       self.assertEqual(repeat_character('', 'm', 99999999), '')
       
-      
       def test_case_sensitive_upper_text(self):
         "it should return the same string with """
         self.assertEqual(repeat_character('Agabani', 'a', 0), 'gbni')
@@ -28,8 +27,22 @@ class TestRepeatCharacter(unittest.TestCase):
     def test_with_more_than_one(self):
           "It should repeat 's' 2 times in Jola Moses"
           self.assertEqual(repeat_character('Jola-Moses', 's', 2), 'Jola-Mossess')
-          
+      
+    #test defensive assertions
+    def test_defensive_check_for_repetitons_is_not_int(self):
+      "It should raise an error if the repetition is not int"
+      with self.assertRaises(AssertionError):
+        repeat_character('Agabani', "A", 'three')
+
     def test_defensive_check_for_negative_repetitions(self):
       "It should raise an error if the repetition is less than 0"
       with self.assertRaises(AssertionError):
         repeat_character('Agabani', "A", -2)
+        
+      def test_defensive_check_if_char_is_not_string(self):
+        "It should raise an error if char is not string"
+      with self.assertRaises(AssertionError):
+        repeat_character(3, "A", 'three')
+
+
+  

@@ -6,6 +6,7 @@ The function returns a string with each occurrence of the character repeated n t
 """
 def repeat_character(text, char_to_repeat, repetitions):
     """The function returns a string with each occurrence of the character repeated n times.
+    
 
     Parameters:
         text (str): we will repeat the character in this string
@@ -32,8 +33,8 @@ def repeat_character(text, char_to_repeat, repetitions):
     >>> repeat_character('Rafaa', 'a', 3)
     'Raaafaaaaa'
     """
-    
-    
+    assert isinstance(char_to_repeat, str), 'second argument must be a string'
+    assert isinstance(repetitions, int), 'third argument must be an int'
     assert repetitions >= 0, 'repetitions cannot be less than 0'
     
     repeated_text = ""
