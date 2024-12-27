@@ -33,6 +33,9 @@ def repeat_character(text, char_to_repeat, repetitions):
     'Raaafaaaaa'
     """
     
+    
+    assert repetitions >= 0, 'repetitions cannot be less than 0'
+    
     repeated_text = ""
 
     for char in text:
