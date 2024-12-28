@@ -12,6 +12,7 @@ def is_in_both(string, list1, list2):
     string(str): first argument of the function
     list1 (list of str): second argument of the function
     list2 (list of str): third list of string
+    
     Returns:
     Boolean(True): if the str is present in first and second list, False if otherwise
     
